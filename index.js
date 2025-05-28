@@ -86,7 +86,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *         description: Lista de usuarios
  */
 
-// Obtener todos los usuarios
+// Obtener todos los usuarios,
 app.get('/usuarios', verificarToken, async (req, res) => {
   try {
     await sql.connect(dbConfig);
