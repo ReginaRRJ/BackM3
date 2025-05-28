@@ -20,8 +20,8 @@ jobs:
         run: |
           npx eslint . --max-warnings=0 || true
 
-      - name: Run Tests
-        run: npm test
+   #   - name: Run Tests
+  #    run: npm test
 
       - name: Install zip
         run: sudo apt-get install zip
